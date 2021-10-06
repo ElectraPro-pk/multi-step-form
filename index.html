@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
+        integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div style="background:#FFEBD7">
+        <div class="header">
+            <div class="logo">
+                <center>
+                    <i style="font-size: 100px;" class="fab fa-opencart"></i>
+                </center>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;<input syle="margin-left:100px !important" data-id="single" class="m-4" name="service" type="radio" >Single Service
+            <br>
+            <br>
+            <br>
+            <div id="single-service">
+            <center>
+                <div id="nav" class="content-justify-center nav-bar-cust">
+                    <a class="nav-options">Unisex</a>
+                    <a class="nav-options">Youth</a>
+                    <a class="nav-options">Women</a>
+                </div>
+            </center>
+            <div class="container" id="type">
+                <b style="text-align: left;" class="m-4">Garment Type</b><br>
+                <section style="display: inline-flex;" class="list-inline">
+                    <div class="card-type type" data-id="tshirt">
+                        <div class="card-body">
+                          TShirt
+                        </div>
+                      </div>
+                      <div class="card-type type" data-id="hoodie">
+                        <div class="card-body">
+                          Hoodie
+                        </div>
+                      </div>
+                </section>
+            </div>
+            <div class="container" id="type-1">
+                <b style="text-align: left;" class="m-4">Types of Garment</b>
+                <br>
+                <section style="display: inline-flex;" class="list-inline">
+                    <div class="slider-item-custom type-1" data-id="cotton-tshirt">                     
+                          <img class="img-slider" src="./images/short-sleeve-cotton-tshirtpng.png">
+                        <small class="label">Short Sleeve <br>Cotton T-shirt</small>
+                    </div>
+                    <div class="slider-item-custom type-1" data-id="long-sleeve-dry-fit">                      
+                            <img class="img-slider" src="./images/long-sleeve-dry-fit.png">                      
+                        <small class="label">Long Sleeve<br>Dry Fit</small>
+                    </div>
+                    <div class="slider-item-custom type-1" data-id="short-sleeve-polo-fit">                    
+                            <img class="img-slider" src="./images/short-sleeve-polo-fit.png">                       
+                        <small class="label">Short Sleeve<br>Polo Fit</small>
+                    </div>
+                    <div class="slider-item-custom type-1" data-id="baby-rib-tshirt">                      
+                            <img class="img-slider" src="./images/baby-rib-tshirt.png">                    
+                        <small class="label">Baby Rib<br>Tshirt</small> 
+                    </div>
+                    <div class="slider-item-custom type-1">                    
+                            <img class="img-slider" src="./images/shot-sleeve-poly-dry-fit.png">                      
+                        <small class="label">Short Sleeve<br>Polo Dry Fit</small>
+                    </div>
+                </section>
+                </div>
+                <div class="container" id="colors">
+                    <br>
+                    <b>
+                        Select Color
+                    </b>
+                </br>
+                    <div class="colors">
+                        <input type="color" id="color-id">
+                    </div>
+                </div>
+                <div class="container" id="size">
+                <br>
+                <b>
+                    Size
+                </b>
+                <br>
+                <section style="display: inline-flex;" class="list-inline">
+                    <div class="slider-item-custom-color 2t size" data-id="2t">
+                        <span class="2t">2t</span>
+                    </div>
+                    <div class="slider-item-custom-color 3t size" data-id="3t">
+                        <span class=" 3t">3t</span>
+                    </div>
+                    <div class="slider-item-custom-color 4t size" data-id="4t">
+                        <span class=" 4t">4t</span>
+                    </div> <div class="slider-item-custom-color xs size" data-id="XS">
+                        <span class=" xs">XS</span>
+                    </div>
+                    <div class="slider-item-custom-color s size" data-id="small">
+                        <span class=" small">Small</span>
+                    </div>
+                    <div class="slider-item-custom-color m size" data-id="medium">
+                        <span class=" med">Medium</span>
+                    </div>
+                    <div class="slider-item-custom-color l size" data-id="large">
+                        <span class=" l">Large</span>
+                    </div>
+                    <div class="slider-item-custom-color xl size" data-id="xl">
+                        <span class=" xl">XL</span>
+                    </div>
+                    <div class="slider-item-custom-color xxl size" data-id="xxl">
+                        <span class=" xxl">XXL</span>
+                    </div>
+                    <div class="slider-item-custom-color size xxxl">
+                        <span class="xxxl">XXXL</span>
+                    </div>
+                </section>
+                </div>
+                <div class="container" id="print">
+                <br>
+                <b style="text-align: left;">Types of Print</b><br>
+                    <section class="list-inline" style="display: inline-flex;">
+                        <div class="slider-item-custom print" data-id="sihoutte">
+                            <div class="icon">
+                                <img class="img-slider" src="./images/logo-1.png">
+                            </div>
+                            <small class="label">Sihouette</small>
+                        </div>
+                        <div class="slider-item-custom print" data-id="full-color">
+                            <div class="icon">
+                                <img class="img-slider" src="./images/logo-1.png">
+                            </div>
+                            <small class="label">Full Color</small>
+                        </div>
+                        <div class="slider-item-custom print" data-id="embroidery">
+                            <div class="icon">
+                                <img class="img-slider" src="./images/logo-1.png">
+                            </div>
+                            <small class="label">Embroidery</small>
+                        </div>
+                    </section>
+                   </div>
+                   <div class="container" id="color">
+                    <br>
+                    <b class="label-shades">Select Shades</b>
+                    <br>
+                    <p class="one">
+                        color 1: 
+                        <input type="color">
+                    </p>
+                    <p class="two">
+                        color 2: 
+                        <input type="color">
+                    </p>
+                    <p class="three">
+                        color 3: 
+                        <input type="color">
+                    </p>
+                    <p class="four">
+                        color 4: 
+                        <input type="color">
+                    </p>
+                    
+
+                </div>
+                <div class="container" id="image-type">
+                    <br>
+                    <b>Logo ?</b>
+                    <br>
+                    <section style="display: inline-flex;" class="list-inline">
+                        <div class="card-type image-type" data-id="logo">
+                            <div class="card-body">
+                              Logo
+                            </div>
+                          </div>
+                          <div class="card-type image-type" data-id="just-words">
+                            <div class="card-body">
+                             Just Words
+                            </div>
+                          </div>
+                    </section>
+                </div>
+                <div class="container" id="logo-type">
+                    <br>
+                    <b>Select Logo Type</b>
+                    <br>
+                    <section style="display: inline-flex;" class="list-inline">
+                        <div class="card-type logo-type" data-id="have-own-logo">
+                            <div class="card-body">
+                              I have My Own Logo Design
+                            </div>
+                          </div>
+                          <div class="card-type logo-type" data-id="not ">
+                            <div class="card-body">
+                              Design A Logo For Me
+                            </div>
+                          </div>
+                    </section>
+                </div>
+                <link rel="stylesheet" href="./css/file-upload.css">
+                <div class="container" id="upload-logo">
+                    <br>
+                    <b>Upload Logo Image</b>
+                    <br>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-block">
+                                    <form action="#" class="dropzone dz-clickable">
+                                        <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                                        <input type="file" style="display: none;"hidden id="file">
+                                    </form>
+                                    <div class="text-center m-t-20">
+                                        <button class="btn btn-primary" onclick="$('#file').trigger('click')">Upload Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" id="logo-desp">
+                    <br>
+                    <b>Describe A Bit</b>
+                    <br>
+                    <br>
+                    <div class="row d-flex justify-content-center">
+                       <textarea rows="6" cols="80" id="desp">
+
+                       </textarea>
+                    </div>
+                </div>
+                
+                <div class="container" id="checkout">
+                    <link rel="stylesheet" href="./css/checkout.css">
+                    <div  class="row justify-content-center">
+                            <div style="padding:20px !important" class="card bg-light my-4 p-3">
+                                <div  class="row justify-content-center">
+                                    <div class="col-12"> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" width="35px" height="35px" /> <img src="https://img.icons8.com/color/48/000000/visa.png" width="35px" height="35px" /> <img src="https://img.icons8.com/color/48/000000/paypal.png" width="35px" height="35px" /> </div>
+                                </div>
+                                <form class="form-card">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group"> <input type="text" class="form-control p-0" id="number" required><label class="form-control-placeholder p-0" for="number">CardNumber</label> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group"> <input type="text" class="form-control p-0" id="name" required><label class="form-control-placeholder p-0" for="name">Cardholder'sName</label> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 col-12">
+                                            <div class="form-group"> <input type="text" class="form-control p-0" id="sdate" required><label class="form-control-placeholder p-0" for="sdate">StartDate</label> </div>
+                                        </div>
+                                        <div class="col-sm-4 col-12">
+                                            <div class="form-group"> <input type="text" class="form-control p-0" id="expdate" required><label class="form-control-placeholder p-0" for="expdate">ExpirationDate</label> </div>
+                                        </div>
+                                        <div class="col-sm-4 col-12">
+                                            <div class="form-group"> <input type="password" class="form-control p-0" id="passw" required><label class="form-control-placeholder p-0" for="passw">CVV</label> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row lrow mt-4 mb-3">
+                                        <div class="col-sm-8 col-12">
+                                            <h3>Grand Total:</h3>
+                                        </div>
+                                        <div class="col-sm-4 col-12">
+                                            <h5>&#36;1,449.00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-sm-12"> <button type="button" class="btn btn-primary btn-block">Pay</button> </div>
+                                    </div>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+</body>
+<script>
+    $(document).ready(function () {
+
+//$("#single-service").hide();
+$("#type,#logo-type,#upload-logo,#logo-desp,#checkout,#image-type").hide()
+
+$(".one,.two,.three,.four").on('change',function(){
+    
+})
+$(".image-type").on('click',function(){
+    $(".image-type").removeClass("active")
+    $(this).addClass("active")
+    val = $(this).attr("data-id")
+    if(val ==="logo"){
+        $("#logo-type").show();
+        $("#logo-desp").hide();
+    }
+    else if(val === "just-words"){
+        $("#file-upload").hide();
+        $("#logo-type").hide();
+        $("#logo-desp").show();
+    }
+
+})
+$(".logo-type").on("click",function(){
+    $(".logo-type").removeClass("active")
+    $(this).addClass("active")
+    val = $(this).attr("data-id")
+    if(val === "have-own-logo"){
+        $("#upload-logo").show();
+        $("#logo-desp").hide()
+    }
+    else{
+        $("#upload-logo").hide();
+        $("#logo-desp").show()
+    }
+    
+})
+$("#file,#desp").on('change',function(){
+    $("#checkout").show()
+})
+$("#nav,#type-1,#color,#print").hide();
+$(".type").on('click',function(){
+    $(".type").removeClass("active")
+    $(this).addClass("active")
+    val = $(this).attr("data-id")
+    if(val === "tshirt")
+        $("#type-1").show()
+    else{
+        $("#type-1").hide()
+    }
+})
+$(".type-1").on('click',function(){
+    $(".type-1").removeClass("active")
+    $(this).addClass("active")
+    val = $(this).attr("data-id")
+    console.log(val)
+    $("#colors").show()
+})
+$("#size").hide()
+$("#color-id").on("change",function(){
+    $("#size").show()
+
+})
+$("input[type='radio']").on('change',function(){
+    val = $(this).attr("data-id");
+    $("#single-service").show();
+  if(val === "single"){
+      $("#nav").show()
+  }
+  else{
+      $("#nav").hide()
+  }
+})
+$(".print").on("click",function(){
+    $(".print").removeClass("active")
+    $(this).addClass("active")
+    val = $(this).attr("data-id")
+    console.log(val)
+    $("#logo-type").show()
+    if(val === "sihoutte"){
+        $(".one,.two").show() 
+        $("#color").show()
+    }
+    else if(val == "full-color"){
+        $("#color").hide();
+        $("#file-upload").hide();
+        $("#image-type").hide();
+    }
+    else if(val == "embroidery"){
+        $("#image-type").show();
+        $("#color").hide()
+    }
+ 
+})
+$(".size").on("click",function(){
+    $(".size").removeClass("active")
+    $(this).addClass("active")
+    $("#print").show()
+})
+$("#colors").hide()
+$(".one,.two,.three,.four").hide()
+//(".tshirt,.dry-fit,.sleeve-polo-fit,.rib-tshirt,.sleeve-poly").hide()
+$(".nav-options").click(function(){
+    $(".nav-options").removeClass("active")
+    $(this).addClass("active")
+    v = $(this).text().toLowerCase();
+    console.log(v)
+    $("#type").show()
+    if(v === "unisex"){
+        $(".2t,.3t,.4t,.xs,.small,.med,.l,.xl,.xxl,.xxxl").hide()
+        $(".small,.med,.l,.xl,.xxl,.xxxl").show()
+        $(".tshirt,.dry-fit,.sleeve-polo-fit,.rib-tshirt,.sleeve-poly").hide()
+        $(".tshirt,.dry-fit,.sleeve-polo-fit").show();
+    }
+    else if(v === "youth"){
+        $(".2t,.3t,.4t,.xs,.small,.med,.l,.xl,.xxl,.xxxl").hide()
+        $(".small,.med,.l,.xl,.xxl").show()
+        $(".tshirt,.dry-fit,.sleeve-polo-fit,.rib-tshirt,.sleeve-poly").hide()
+        $(".tshirt").show();
+       
+    }
+    else if(v.trim() === "women"){
+        $(".2t,.3t,.4t,.xs,.small,.med,.l,.xl,.xxl,.xxxl").hide()
+        $(".2t,.3t,.4t,.xs,.small,.med,.l").show()
+        $(".tshirt,.dry-fit,.sleeve-polo-fit,.rib-tshirt,.sleeve-poly").hide()
+        $(".r-b-tshirt,.sleeve-poly").show();
+     
+    }
+})
+$(".1").on('click',function(){
+    $(".one,.two,.three,.four").hide()
+    $(".one").show()
+})
+$(".2").on('click',function(){
+    $(".one,.two,.three,.four").hide()
+    $(".one,.two").show()
+})
+$(".3").on('click',function(){
+    $(".one,.two,.three,.four").hide()
+    $(".one,.two,.three").show()
+})
+$(".4").on('click',function(){
+    $(".one,.two,.three,.four").hide()
+    $(".one,.two,.three,.four").show()
+})
+
+        $('.customer-logos').slick({
+            infinite: true,
+            accessibility: false,
+             centerMode: false,
+            focusOnSelect: true,
+            accessibility: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2
+                }
+            },{
+                breakpoint:800,
+                settings: "unslick"
+            }]
+        });
+    });
+   /* setInterval(function(){
+        $(".customer-logos").attr("style","opacity: 1; width: 3240px; ")
+    },100)
+    */
+    
+</script>
+
+</html>
